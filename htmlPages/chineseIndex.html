@@ -3,12 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Convertisseur de Bases</title>
-	<base href="../../">
+	<base href="../">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/baseConverter.css">
-  <script type="text/javascript" src="javaScript/baseConverter.js"></script>
-  <link rel="icon" href="resources/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/chineseIndex.css">
+	<link rel="icon" href="resources/icon.png">
+	<title>Ressources Chinois</title>
 </head>
 
 <body>
@@ -28,19 +27,16 @@
 		</ul>
 	</nav>
 
-
-	<div class="baseConverterBox">
-		<form>
-			<div>Nombre (base 10):&nbsp;<input type="text" id="numberInput" name="numberInput"></div>
-			<div>Base demandée:&nbsp;<input type="text" id="baseInput" name="baseInput"></div>
-		</form>
-		<div>
-			<div class="resultElement">
-				<p>Résultat:&nbsp;</p>
-				<p id="resultParagraph">---</p>
-			</div>
-			<button onclick="convertBase(parseFloat(document.getElementById('numberInput').value), parseFloat(document.getElementById('baseInput').value));">Convertir</button>
-		</div>
+	<div class="indexSidebar">
+		<h1>Repère</h1>
+		<ul>
+				<li><a href="#">Cours</a></li>
+			<li><a href="#">Ressources</a></li>
+		</ul>
+	</div>
+	
+	<div class="mainBox">
+			
 	</div>
 </body>
 </html>

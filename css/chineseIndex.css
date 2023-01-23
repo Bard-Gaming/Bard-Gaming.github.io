@@ -1,0 +1,39 @@
+/*------------------------------Index Bar (left)----------------------*/
+.indexSidebar {
+	background-color: lightblue;
+	border: solid black 1px;
+	border-radius: 7px;
+	width: 19vw;
+	height: 120px;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	align-items: center;
+	float: left;
+}
+
+.indexSidebar > ul > li {
+	margin-top: 4px;
+}
+
+.indexSidebar > ul > li > a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+
+}
+
+.indexSidebar > ul > li > a:hover {
+	 text-decoration: underline;
+}
+
+/*------------------------------Main COntent----------------------*/
+
+.mainBox {
+	background-color: #ebbf46;
+	width: 80vw;
+	height: 120px;
+	float: right;
+	border: solid black 1px;
+	border-radius: 7px;
+}
