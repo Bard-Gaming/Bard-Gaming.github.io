@@ -1,0 +1,12 @@
+.descriptionBox {
+	background-color:#FFE6CC;
+	width: 65vw;
+	height: 500px;
+}
+
+.descriptionBox > div {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50vw;
+}
