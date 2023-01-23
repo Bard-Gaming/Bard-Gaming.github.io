@@ -58,3 +58,7 @@
 .setSelectorContainer li:hover button {
 	background-color: darkorange;
 }
+
+#firstSet {
+	font-weight: bold;
+}

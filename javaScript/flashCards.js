@@ -1,4 +1,4 @@
-var charList = ["无聊", "尴尬", "告诉", "打算", "参观", "胃口好", "感冒", "反过来说", "春夏秋冬", "虽然", "桌子", "开始"];
+var charList = ["无聊", "尴尬", "告诉", "打算", "参观", "胃口好", "感冒", "反过来说", "春夏秋冬", "虽然", "桌子", "开始"]; //set principal, change lorsqu'on choisit un autre ensemble.
 var pinyinList = ["wu liao", "gan ga", "gao su", "da suan", "can guan", "wei kou hao", "gan mao", "fan guo lai shuo", "chun xia qiu dong", "sui ran", "zhuo zi", "kai shi"];
 var definitionList = ["ennuyeux", "génant", "avertir/prévenir", "planifier", "visiter", "bon appétit!", "rhume", "d'autre part (connecteur logique)", "printemps, été, automne, hiver", "cependant (connecteur logique)", "table", 'Commencer (appuyez sur "Prochaine Carte")']
 
@@ -8,15 +8,18 @@ document.getElementById("firstSet").style.fontWeight = "bold"
 //-------------------------------------------------------------------------------------------------------------------------
 
 function replaceCharSet(set) {
-	const firstSet = ["无聊", "尴尬", "告诉", "打算", "参观", "胃口好", "感冒", "反过来说", "春夏秋冬", "虽然", "桌子", "开始"];
-	const secondSet = ["a", "b", "c", "d", "e", "f"]
+	new File(String, "characterSets.txt")
+	readAsText
 
 	charList = eval(set);
-	document.getElementById(currentSet).style.fontWeight = "normal" //sets previous set font weight to normal
-	document.getElementById(set).style.fontWeight = "bold" //sets new set font weight to bold
+	document.getElementById(currentSet).style.fontWeight = "normal" //met le poid du texte en normal
+	document.getElementById(set).style.fontWeight = "bold" //met le poid du texte du nouvel ensemble à lourd
 	currentSet = set
 	console.log("Set charList to", set + ":", charList);
+	generateCard();
 }
+
+//-------------------------------------------------------------------------------------------------------------------------
 
 function generateCard() {
 	var currentDisplayChar = document.getElementById("mainCharacterDisplay").innerHTML; //trouver le caractère actuel
@@ -27,17 +30,31 @@ function generateCard() {
 	let generatedChar = charList[randomInteger]; //prend le numéro aléatoire comme index de la liste
 
 	if (charList.length == 0) {
-		console.log("charList empty.");
-		document.getElementById("mainCharacterDisplay").innerHTML = "Fin d'ensemble."; //message de fin
-		document.getElementById("mainPinyinDisplay").style.display = "none" //cache l'élément texte qui affiche le pinyin
-		document.getElementById("mainDefinitionDisplay").style.display = "none" //cache l'élément texte qui affiche la définition
-		document.getElementById("nextCardButton").value = "Recommencer"
+		endCurrentSet();
 
 	} else {
 		document.getElementById("mainPinyinDisplay").innerHTML = "---"; //enlève le pinyin du caractère
 		document.getElementById("mainDefinitionDisplay").innerHTML = "---"; //enlève la définition du caractère 
 		document.getElementById("mainCharacterDisplay").innerHTML = generatedChar; //met à jour le caractère actuel
 	}
+}
+
+function endCurrentSet() {
+	console.log("charList empty."); //afiche que la variable est vide.
+	document.getElementById("mainCharacterDisplay").innerHTML = "Fin d'ensemble."; //message de fin
+	document.getElementById("mainPinyinDisplay").style.display = "none"; //cache l'élément texte qui affiche le pinyin
+	document.getElementById("mainDefinitionDisplay").style.display = "none"; //cache l'élément texte qui affiche la définition
+	document.getElementById("nextCardButton").value = "Recommencer"; //change le texte du bouton ) "Recommencer"
+	document.getElementById("nextCardButton").onclick = restartSet; //fait que le bouton lance la fonction restartSet() aulieu de generateCard()
+}
+
+function restartSet() {
+	replaceCharSet(currentSet); //Remet tous les mots dans la liste
+	document.getElementById("nextCardButton").value = "Prochaine Carte"; //remet le texte du bouton à "Prochaine Carte"
+	document.getElementById("nextCardButton").onclick = generateCard; //remet la function du bouton à generateCard()
+	generateCard();
+	document.getElementById("mainPinyinDisplay").style.display = "";
+	document.getElementById("mainDefinitionDisplay").style.display = "";
 }
 
 //-------------------------------------------------------------------------------------------------------------------------
@@ -47,7 +64,5 @@ function showDefinition() {
 	let indexValue = charList.indexOf(currentCharacter); //trouve l'index du caractère actuel
 	document.getElementById("mainPinyinDisplay").innerHTML = pinyinList[indexValue]; //met à jour le pinyin
 	document.getElementById("mainDefinitionDisplay").innerHTML = definitionList[indexValue]; //met à jour la définition
-}
 
-//https://stackoverflow.com/questions/21397743/passing-html-input-value-as-a-javascript-function-parameter
-//https://www.youtube.com/watch?v=2qA4mobfcK0
+}
