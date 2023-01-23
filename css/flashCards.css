@@ -55,7 +55,7 @@
 	padding: 8px;
 }
 
-.setSelectorContainer li:hover button {
+.setSelectorContainer li button:hover {
 	background-color: darkorange;
 }
 
