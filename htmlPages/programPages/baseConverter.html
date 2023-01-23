@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Convertisseur de Bases</title>
+	<base href="../../">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/baseConverter.css">
+  <script type="text/javascript" src="javaScript/baseConverter.js"></script>
+  <link rel="icon" href="resources/icon.png">
+</head>
+
+<body>
+	<nav>
+		<ul class="navbarMainList">
+			<li><a href="index.html">Page d'accueil</a></li>
+			<li>
+				<a href="htmlPages/programIndex.html">Programmes ↓</i></a>
+				<ul class="programList">
+					<li><a href="htmlPages/programPages/baseConverter.html">Convertisseur de Bases</a></li>
+					<li><a href="htmlPages/programPages/flashCards.html">Cartes Flash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				</ul>
+			</li>
+			<li><a href="htmlPages/aboutPage.html">À propos</a></li>
+
+		</ul>
+	</nav>
+
+
+	<div class="baseConverterBox">
+		<form>
+			<div>Nombre (base 10):&nbsp;<input type="text" id="numberInput" name="numberInput"></div>
+			<div>Base demandée:&nbsp;<input type="text" id="baseInput" name="baseInput"></div>
+		</form>
+		<div>
+			<div class="resultElement">
+				<p>Résultat:&nbsp;</p>
+				<p id="resultParagraph">---</p>
+			</div>
+			<button onclick="convertBase(parseFloat(document.getElementById('numberInput').value), parseFloat(document.getElementById('baseInput').value));">Convertir</button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cartes Flash</title>
+	<base href="../../">
+	<link rel="stylesheet" type="text/css" href="css/flashCards.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<script type="text/javascript" src="javaScript/flashCards.js"></script>
+	<link rel="icon" href="resources/icon.png">
+</head>
+<body>
+	<nav>
+		<ul class="navbarMainList">
+			<li><a href="index.html">Page d'accueil</a></li>
+			<li>
+				<a href="htmlPages/programIndex.html">Programmes ↓</i></a>
+				<ul class="programList">
+					<li><a href="htmlPages/programPages/baseConverter.html">Convertisseur de Bases</a></li>
+					<li><a href="htmlPages/programPages/flashCards.html">Cartes Flash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				</ul>
+			</li>
+			<li><a href="htmlPages/aboutPage.html">À propos</a></li>
+
+		</ul>
+	</nav>
+
+	<div class="setSelectorContainer">
+		<h1>Selecteur d'ensemble:</h1>
+		<ul>
+			<li><button id="firstSet" onclick="replaceCharSet('firstSet');">Caractères aléatoires</button></li>
+			<li><button id="secondSet" onclick="replaceCharSet('secondSet');">Caractères bizarres</button></li>
+		</ul>
+	</div>
+
+	<div class="flashcardContainer">
+		<p id="mainCharacterDisplay">开始</p>
+		<p id="mainPinyinDisplay">---</p>
+		<p id="mainDefinitionDisplay">---</p>
+		<input type="button" value="Prochaine Carte" onclick="generateCard();" id="nextCardButton">
+		<input type="button" value="Définition" onclick="showDefinition();">
+	</div>
+</body>
+</html>
