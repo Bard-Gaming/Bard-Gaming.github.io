@@ -37,3 +37,17 @@
 	border: solid black 1px;
 	border-radius: 7px;
 }
+
+/*------------------------------Description Paragraph----------------------*/
+.descriptionParagraph {
+	background-image: url("../resources/textBackground.jpg");
+	background-size: 98.8vw;
+	background-repeat: no-repeat;
+	border-radius: 75px;
+	width: 98.8vw;
+	height: 98.8vw;
+}
+
+.descriptionParagraph > p {
+	color: white;
+}

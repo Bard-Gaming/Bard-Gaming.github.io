@@ -36,9 +36,17 @@ nav {
 	color: white;
 }
 
+.navbarMainList > li > img {
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: 10px;
+}
+
 .navbarMainList li a:hover {
 	background-color: #1F2E2A;
 	border-radius: 0 0 12px 12px;
+	bottom: 10px;
 }
 
 .navbarMainList li ul {
