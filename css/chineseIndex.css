@@ -36,18 +36,32 @@
 	float: right;
 	border: solid black 1px;
 	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-/*------------------------------Description Paragraph----------------------*/
-.descriptionParagraph {
-	background-image: url("../resources/textBackground.jpg");
-	background-size: 98.8vw;
-	background-repeat: no-repeat;
-	border-radius: 75px;
-	width: 98.8vw;
-	height: 98.8vw;
+.mainBox > ul {
+	list-style: none;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: ;
 }
 
-.descriptionParagraph > p {
-	color: white;
+.mainBox > ul > li {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.mainBox > ul > li > a{
+	color: black;
+	background-color: white;
+	border: solid black 1px;
+	border-radius: 5px;
+	padding: 2px 5px;
+	text-decoration: none;
+}
+
+.mainBox > ul > li > a:hover{
+	background-color: lightgray;
 }

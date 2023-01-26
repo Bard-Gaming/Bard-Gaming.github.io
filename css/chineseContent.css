@@ -1,0 +1,36 @@
+body {
+	background-color: black;
+}
+
+.descriptionParagraph {
+	background-image: url("../resources/textBackground.jpg");
+	background-size: 98vw;
+	background-repeat: no-repeat;
+	background-color: black;
+	width: 74vw;
+	height: 86vw;
+	padding-top: 12vw;
+	padding-right: 12vw;
+	padding-left: 12vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.descriptionParagraph > p,  .descriptionParagraph > h1{
+	color: white;
+}
+
+.descriptionParagraph > p > a {
+	color: gold;
+	font-weight: normal;
+}
+
+.descriptionParagraph > p > a:hover {
+	font-weight: bold;
+}
+
+.descriptionParagraph > h1 {
+	text-decoration: underline;
+}
