@@ -22,13 +22,13 @@ nav {
 	float: left;
 }
 
-.navbarMainList li {
+.navbarMainList > li {
 	float: left;
 	list-style: none;
 	position: relative;
 }
 
-.navbarMainList li a {
+.navbarMainList > li > a:not(#fpLogo) {
 	font-size: 24px;
 	text-decoration: none;
 	padding: 28px;
@@ -36,31 +36,41 @@ nav {
 	color: white;
 }
 
-.navbarMainList > li > img {
-	margin-left: 10px;
-	margin-right: 10px;
-	position: relative;
-	top: 10px;
-}
-
-.navbarMainList li a:hover {
+.navbarMainList > li > a:hover:not(#fpLogo), .programList > li > a:hover {
 	background-color: #1F2E2A;
 	border-radius: 0 0 12px 12px;
 	bottom: 10px;
 }
 
-.navbarMainList li ul {
+.navbarMainList > li:hover > ul {
+	display: block;
+}
+
+.programList {
 	display: none;
 	position: absolute;
 	background-color: darkslategray;
 	border-radius: 0 0 12px 12px;
 }
 
-.navbarMainList li:hover ul {
-	display: block;
+.programList > li {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
-.navbarMainList li ul li a {
+.programList > li > a {
 	padding: 16px 20px;
 	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	justify-self: stretch;
+}
+
+#fpLogo > img {
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: 10px;
 }
