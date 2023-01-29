@@ -32,14 +32,30 @@
 	<div class="baseConverterBox">
 		<form>
 			<div>Nombre (base 10):&nbsp;<input type="text" id="numberInput" name="numberInput"></div>
-			<div>Base demandée:&nbsp;<input type="text" id="baseInput" name="baseInput"></div>
+			
+			<div>
+				<label for="bases">Base demandée:&nbsp;</label>
+
+				<select name="baseSelector" id="baseSelector">
+  					<option value="2">Binaire</option>
+  					<option value="3">Base 3</option>
+  					<option value="4">Base 4</option>
+  					<option value="5">Base 5</option>
+  					<option value="6">Base 6</option>
+  					<option value="7">Base 7</option>
+  					<option value="8">Octal</option>
+  					<option value="9">Base 9</option>
+  					<option value="10">Décimal</option>
+				</select>
+			</div>
+		
 		</form>
-		<div>
+		<div class="secondBox">
 			<div class="resultElement">
 				<p>Résultat:&nbsp;</p>
 				<p id="resultParagraph">---</p>
 			</div>
-			<button onclick="convertBase(parseFloat(document.getElementById('numberInput').value), parseFloat(document.getElementById('baseInput').value));">Convertir</button>
+			<button onclick="convertBase(parseFloat(document.getElementById('numberInput').value), parseFloat(document.getElementById('baseSelector').value));">Convertir</button>
 		</div>
 	</div>
 </body>

@@ -6,7 +6,7 @@ body {
 }
 
 .programBox {
-	height: 200px;
+	height: 350px;
 	padding: 20px;
 	margin: 0px;
 	width: 85vw;
@@ -21,15 +21,30 @@ body {
 
 .programBox h1 {
 	margin-top: 0px;
+	margin-bottom: 15px;
+	text-decoration: underline;
+	font-size: 32px;
 }
 
-.programBox li a {
-	text-decoration: none;
+.programBox > li {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programBox > li > a {
+	text-decoration: underline;
 	color: black;
 	position: relative;
 	font-size: 20px;
 }
 
+.programBox > li > p {
+	text-align: center;
+	margin-top: 1px;
+}
+
 .programBox a:hover {
-	text-decoration: underline;
+	font-weight: bold;
 }
