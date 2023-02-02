@@ -9,7 +9,7 @@
 	background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url("../resources/frontpageBg.jpg"); /*Source: https://www.uhdpaper.com/2023/01/cat-sunset-city-scenery-anime-4k-860i.html*/
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-color: white;
+	background-color: black;
 
 	width: 80vw;
 	height: 44vw;
@@ -43,6 +43,15 @@
 
 .topText > button:hover {
 	background-color: darkorange;
+}
+
+.lowerBody {
+    background-color: black;
+    width: 74.5vw;
+    height: 1000px;
+    color: white;
+    padding-left: 12vw;
+    padding-right: 12vw;
 }
 
 #test {
