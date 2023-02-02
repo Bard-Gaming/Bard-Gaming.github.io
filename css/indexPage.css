@@ -8,9 +8,9 @@
 .mainBody > .topBackground {
 	background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.85)), url("../resources/frontpageBg.jpg"); /*Source: https://www.uhdpaper.com/2023/01/cat-sunset-city-scenery-anime-4k-860i.html*/
 	background-size: contain;
-	background-repeat: no-repeat;
+	background-repeat: space;
 	background-color: white;
 
-	width: 80vw;
-	height: 500px;
+	width: 100vw;
+	height: 100vh;
 }
