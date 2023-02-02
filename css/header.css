@@ -16,19 +16,23 @@ nav {
 	height: 85px;
 	background-color: darkslategray;
 	border-radius: 7px;
+	z-index: 10;
 }
 
 .navbarMainList {
+	z-index:inherit;
 	float: left;
 }
 
 .navbarMainList > li {
+	z-index:inherit;
 	float: left;
 	list-style: none;
 	position: relative;
 }
 
 .navbarMainList > li > a:not(#fpLogo) {
+	z-index:inherit;
 	font-size: 24px;
 	text-decoration: none;
 	padding: 28px;
@@ -37,6 +41,7 @@ nav {
 }
 
 .navbarMainList > li > a:hover:not(#fpLogo), .programList > li > a:hover {
+	z-index:inherit;
 	background-color: #1F2E2A;
 	border-radius: 0 0 12px 12px;
 	bottom: 10px;
@@ -44,9 +49,11 @@ nav {
 
 .navbarMainList > li:hover > ul {
 	display: block;
+	z-index:inherit;
 }
 
 .programList {
+	z-index:inherit;
 	display: none;
 	position: absolute;
 	background-color: darkslategray;
@@ -54,6 +61,7 @@ nav {
 }
 
 .programList > li {
+	z-index:inherit;
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -61,6 +69,7 @@ nav {
 }
 
 .programList > li > a {
+	z-index:inherit;
 	padding: 16px 20px;
 	font-size: 18px;
 	color: white;
@@ -69,6 +78,7 @@ nav {
 }
 
 #fpLogo > img {
+	z-index:inherit;
 	margin-left: 10px;
 	margin-right: 10px;
 	position: relative;
