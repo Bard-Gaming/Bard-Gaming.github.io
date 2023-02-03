@@ -46,15 +46,20 @@
 }
 
 .lowerBody {
-    background-color: black;
-    width: 74.5vw;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("../resources/indexTextBackground.jpg");
+	background-size: 750px;
+    width: 80%;
     height: 1000px;
     color: white;
-    padding-left: 12vw;
-    padding-right: 12vw;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-#test {
-	position: absolute;
-	top: 1000px;
+.lowerBody > .contentBox {
+    background-color: black;
+    height: 1000px;
+}
+
+.lowerBody > .contentBox > h1 {
+	padding-top: 50px;
 }
