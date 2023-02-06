@@ -1,3 +1,7 @@
+body {
+	background-color: black;
+}
+
 .mainBody {
     display: flex;
     flex-direction: row;
@@ -75,11 +79,11 @@
 }
 
 .lowerBody > .contentBox > p > a {
-	color: aqua;
+	color: orange;
 }
 
 .lowerBody > .contentBox > p > a:hover {
-	color: deepskyblue;
+	color: darkorange;
 }
 
 .lowerBody > .contentBox > ul {
@@ -95,10 +99,10 @@
 	text-decoration: none;
 	border-radius: 3px;
 
-	color: black;
-	background-color: aqua;
+	color: white;
+	background-color: orange;
 }
 
 .lowerBody > .contentBox > ul > li > a:hover {
-	background-color: deepskyblue;
+	background-color: darkorange;
 }
