@@ -1,0 +1,69 @@
+body {
+	background-color: greenyellow;
+	background: url("../resources/star-background.jpg");
+}
+
+/*-----------------------Tab Content----------------------*/
+.tabContent:not(#pdfList) {
+	display: none;
+}
+
+.tabContent {
+	background-color: peachpuff;
+	border: 1px solid #737373;
+	border-bottom: none;
+}
+
+.fileList {
+	display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.fileList > li {
+	margin-top: 10px;
+}
+
+.fileList > li > a {
+	text-decoration: none;
+	color: royalblue;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.fileList > li > a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+.tabContent > h1 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+/*-----------------------Tab Buttons----------------------*/
+.tabButtonContainer {
+	background-color: #b3b3b3;
+	border: 1px solid #737373;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+}
+
+.tabButton {
+	border: none;
+	padding: 10px 20px;
+	transition: 0.2s;
+}
+
+.tabButton:hover {
+	background-color: #a6a6a6;
+}
+
+.tabButton.currentButton {
+	background-color: #8c8c8c;
+}

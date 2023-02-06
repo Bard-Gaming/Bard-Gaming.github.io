@@ -1,4 +1,3 @@
--Make "Chinese Resources" a dropdown menu (cours//ressources)
 -Make base converter look better
 	-Add more input bases?
 -Finish chinese sets that were started

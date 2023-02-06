@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="../../">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/chineseContent.css">
+	<link rel="stylesheet" type="text/css" href="css/classContent.css">
 	<link rel="icon" href="resources/icon.png">
 	<title>Cours - Chinois</title>
 	<script type="text/javascript" src="javaScript/main.js"></script>
@@ -13,16 +13,39 @@
 <body>
 	<script>loadNavbar();</script>
 
-	<div class="fileContainer">
+	<div class="tabButtonContainer">
+		<button class="tabButton currentButton" onclick="changeTab(event, 'pdfList');">Liste de PDF</button>
+		<button class="tabButton" onclick="changeTab(event, 'workLife');">Travail</button>
+		<button class="tabButton" onclick="changeTab(event, 'legends');">Légendes</button>
+	</div>
+
+	<div class="tabContent" id="pdfList">
+		<h1>Liste de fichiers PDF</h1>
 		<ul class=fileList>
-		<li><a title="Ouvrir document" href="resources/classContent/monde_du_travail.pdf">Le monde du Travail</a></li>
-		<li><a title="Ouvrir document" href="resources/classContent/apparition_monde.pdf">L'apparition du monde</a></li>
-		<li><a title="Ouvrir document" href="resources/classContent/opinion_légende.pdf">Opinion sur les Légendes</a></li>
-		<li><a title="Ouvrir document" href="resources/classContent/app_chinoises.pdf">Les apps chinoises</a></li>
-		<li><a title="Ouvrir document" href="resources/classContent/taboo_superstitions.pdf">Les Superstitions/taboo</a></li>
-		<li><a title="Ouvrir document" href="resources/classContent/veille_nouvel_an.pdf">La veille du nouvel an</a></li>
-		<li><a title="Ouvrir document" href="resources/classContent/NB_U8.pdf">Vocabulaire région</a></li>
-	</ul>
+			<li><a title="Ouvrir document" href="resources/classContent/monde_du_travail.pdf">Le monde du Travail</a></li>
+			<li><a title="Ouvrir document" href="resources/classContent/apparition_monde.pdf">L'apparition du monde</a></li>
+			<li><a title="Ouvrir document" href="resources/classContent/opinion_légende.pdf">Opinion sur les Légendes</a></li>
+			<li><a title="Ouvrir document" href="resources/classContent/app_chinoises.pdf">Les apps chinoises</a></li>
+			<li><a title="Ouvrir document" href="resources/classContent/taboo_superstitions.pdf">Les Superstitions/taboo</a></li>
+			<li><a title="Ouvrir document" href="resources/classContent/veille_nouvel_an.pdf">La veille du nouvel an</a></li>
+			<li><a title="Ouvrir document" href="resources/classContent/NB_U8.pdf">Vocabulaire région</a></li>
+		</ul>
+	</div>
+
+	<div class="tabContent" id="workLife">
+		<h1>Le monde du travail</h1>
+		<p>
+			<a title="Ouvrir document" href="resources/classContent/monde_du_travail.pdf">Le monde du Travail</a>
+			
+		</p>
+	</div>
+
+	<div class="tabContent" id="legends">
+		<h1>Les légendes</h1>
+		<p>
+			<a title="Ouvrir document" href="resources/classContent/apparition_monde.pdf">L'apparition du monde</a>
+			<a title="Ouvrir document" href="resources/classContent/opinion_légende.pdf">Opinion sur les Légendes</a>
+		</p>
 	</div>
 </body>
 </html>
