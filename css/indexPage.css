@@ -49,6 +49,7 @@ body {
 }
 
 /*----------------------lettres individuelles---------------------- */
+
 .welcomeText:hover > span:nth-child(1) {
 	transform: translate(-25%, 15%) rotate(-15deg);
 }
@@ -87,6 +88,38 @@ body {
 
 .welcomeText:hover > span:nth-child(10) {
 	transform: translate(-62%, 62%) rotate(50deg);
+}
+
+.welcomeText:hover > span:nth-child(11) {
+	transform: translate(-38%, -45%) rotate(-27deg);
+}
+
+.welcomeText:hover > span:nth-child(12) {
+	transform: translate(-25%, 5%) rotate(-8deg);
+}
+
+.welcomeText:hover > span:nth-child(13) {
+	transform: translate(-10%, -12%) rotate(20deg);
+}
+
+.welcomeText:hover > span:nth-child(14) {
+	transform: translate(9%, 22%) rotate(-74deg);
+}
+
+.welcomeText:hover > span:nth-child(15) {
+	transform: translate(19%, -29%) rotate(33deg);
+}
+
+.welcomeText:hover > span:nth-child(16) {
+	transform: translate(23%, 19%) rotate(37deg);
+}
+
+.welcomeText:hover > span:nth-child(17) {
+	transform: translate(28%, -19%) rotate(-26deg);
+}
+
+.welcomeText:hover > span:nth-child(18) {
+	transform: translate(125%, 0%) rotate(25deg);
 }
 
 #spaceChar {

@@ -11,7 +11,6 @@ body {
 .tabContent {
 	background-color: peachpuff;
 	border: 1px solid #737373;
-	border-bottom: none;
 }
 
 .fileList {
@@ -35,18 +34,49 @@ body {
 
 .fileList > li > a:hover {
 	text-decoration: underline;
-	color: blue;
+	color: darkblue;
 }
 
 .tabContent > h1 {
 	text-decoration: underline;
 	text-align: center;
+	margin-top: 15px;
 }
 
+.tabContent > a {
+	color: royalblue;
+	font-weight: bold;
+	margin-left: 5vw;
+	margin-top: 20px;
+}
+
+.tabContent > a:hover, .tabContent > p > a:hover {
+	color: darkblue;
+}
+
+.tabContent > h2 {
+	margin-top: 15px;
+	font-size: 19px;
+	text-align: center;
+}
+
+.tabContent > p {
+	margin: 0vw 10vw;
+	margin-bottom: 20px;
+}
+
+.tabContent > p > a {
+	color: royalblue;
+}
+
+.tabContent > iframe {
+	margin: 20px 23.5vw;
+}
 /*-----------------------Tab Buttons----------------------*/
 .tabButtonContainer {
 	background-color: #b3b3b3;
 	border: 1px solid #737373;
+	border-bottom: none;
 	display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -58,6 +88,7 @@ body {
 	border: none;
 	padding: 10px 20px;
 	transition: 0.2s;
+	font-size: 15px;
 }
 
 .tabButton:hover {

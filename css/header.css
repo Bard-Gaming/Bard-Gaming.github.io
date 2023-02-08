@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Helvetica, sans-serif;
 }
 
 html {
@@ -89,5 +90,5 @@ nav {
 }
 
 .listElement2 {
-	padding: 16px 34px;
+	padding: 16px 30px;
 }

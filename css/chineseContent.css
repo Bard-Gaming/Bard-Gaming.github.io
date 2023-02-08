@@ -42,5 +42,15 @@ body {
 }
 
 .descriptionParagraph > ul > li {
-	margin-bottom: 30px;
+	margin-bottom: 4.5vw;
+}
+
+.descriptionParagraph > ul > li > p {
+	font-size: 2vw;
+	background-color: black;
+}
+
+.descriptionParagraph > ul > li > h1 {
+	font-size: 3.2vw;
+	background-color: black;
 }

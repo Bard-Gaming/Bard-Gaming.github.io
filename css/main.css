@@ -36,6 +36,7 @@ body {
 .programBox > li > a {
 	text-decoration: underline;
 	color: black;
+	white-space: nowrap;
 	position: relative;
 	font-size: 20px;
 }

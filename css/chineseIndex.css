@@ -4,12 +4,16 @@
 	border: solid black 1px;
 	border-radius: 7px;
 	width: 19vw;
-	height: 120px;
+	height: 150px;
 	display: flex;
 	align-content: center;
 	flex-direction: column;
 	align-items: center;
 	float: left;
+}
+
+.indexSidebar > h1 {
+	margin-top: 15px;
 }
 
 .indexSidebar > ul > li {
@@ -32,13 +36,17 @@
 .mainBox {
 	background-color: #ebbf46;
 	width: 80vw;
-	height: 120px;
+	height: 150px;
 	float: right;
 	border: solid black 1px;
 	border-radius: 7px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.mainBox > h1 {
+	margin-top: 15px;
 }
 
 .mainBox > ul {
