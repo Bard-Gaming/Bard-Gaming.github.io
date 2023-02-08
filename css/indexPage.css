@@ -35,9 +35,65 @@ body {
 	z-index: 1;
 }
 
-.topText > p, .topText > button {
+.topText > .welcomeText, .topText > button {
 	margin-left: 1.5vw;
 }
+
+.welcomeText {
+	display: flex;
+}
+
+.welcomeText > span {
+	position: relative;
+	transition: .1s;
+}
+
+/*----------------------lettres individuelles---------------------- */
+.welcomeText:hover > span:nth-child(1) {
+	transform: translate(-25%, 15%) rotate(-15deg);
+}
+
+.welcomeText:hover > span:nth-child(2) {
+	transform: translate(0%, -25%) rotate(7deg);
+}
+
+.welcomeText:hover > span:nth-child(3) {
+	transform: translate(5%, 35%) rotate(-7deg);
+}
+
+.welcomeText:hover > span:nth-child(4) {
+	transform: translate(-10%, -30%) rotate(-35deg);
+}
+
+.welcomeText:hover > span:nth-child(5) {
+	transform: translate(25%, 5%) rotate(50deg);
+}
+
+.welcomeText:hover > span:nth-child(6) {
+	transform: translate(50%, -35%) rotate(-90deg);
+}
+
+.welcomeText:hover > span:nth-child(7) {
+	transform: translate(-25%, 45%) rotate(35deg);
+}
+
+.welcomeText:hover > span:nth-child(8) {
+	transform: translate(75%, -75%) rotate(-68deg);
+}
+
+.welcomeText:hover > span:nth-child(9) {
+	transform: rotate(145deg);
+}
+
+.welcomeText:hover > span:nth-child(10) {
+	transform: translate(-62%, 62%) rotate(50deg);
+}
+
+#spaceChar {
+	padding: 0px 1.25vw;
+}
+
+/*----------------------lettres individuelles---------------------- */
 
 .topText > button {
 	border: solid orange 1px;
